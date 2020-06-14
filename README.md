@@ -123,38 +123,9 @@ These instructions will get you a copy of the project up and running on your loc
     - "I understand what you are going through. Please tell me more."
     - "Please share with me more about how you feel."
 
-### Break down into end to end tests
-
-Explain what these tests test and why, if you were using something like `mocha` for instnance
-
-```bash
-npm install mocha --save-dev
-vi test/test.js
-./node_modules/mocha/bin/mocha
-```
-
-### And coding style tests
-
-Explain what these tests test and why, if you chose `eslint` for example
-
-```bash
-npm install eslint --save-dev
-npx eslint --init
-npx eslint sample-file.js
-```
-
-## Live demo
-
-You can find a running system to test at [callforcode.mybluemix.net](http://callforcode.mybluemix.net/)
-
 ## Built with
 
-* [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
-* [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
-* [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) - An AI integrated chatbot
 
 ## Contributing
 
