@@ -65,45 +65,63 @@ Our team proposes S.O.P.H.I.A., a lightweight,
 ![Roadmap](roadmap.jpg)
 
 ## Getting started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```bash
-dnf install wget
-wget http://www.example.com/install.sh
-bash install.sh
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be, for example
-
-```bash
-export TOKEN="fffd0923aa667c617a62f5A_fake_token754a2ad06cc9903543f1e85"
-export EMAIL="jane@example.com"
-dnf install npm
-node samplefile.js
-Server running at http://127.0.0.1:3000/
-```
-
-And repeat
-
-```bash
-curl localhost:3000
-Thanks for looking at Code-and-Response!
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. There is no Prerequisites or Installing required to run the chatbot. Just click on the following preview link to start:
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+### Testing for issues regarding pain in the limbs
+1. User can type into the chatbot "I am experiencing some pain in my legs"
+2. The chatbot will respond with "I am sorry to hear that. Has the pain persisted longer than 2 days?"
+3. The user should give a "yes" or "no" reply.
+   - If the user replies with "yes", the bot will reply the user with "I see. I would advice you to head to your nearest GP to seek medical treatment. Do take note of any medication that you have taken in the past 24 hours and if you have any drug allergies."
+ 4. If the user replies "no", the chatbot will then ask "I see. In that case, are you facing any 2 out of the 3 following conditions? 1) Weakness 2) Numbness 3) Result of an Injury".
+    - If the user replies "yes", the chat bot will then respond with "Ahh okay. In this case, I would advice you to head to your nearest GP to see a doctor. Do take note of any medication that you have taken in the past 24 hours and if you have any drug allergies."
+    - If the user replies "no", the chat bot will respond with "Okay. If you are not feeling a combination of any of those symptoms, you are okay. Please continue to monitor your pain and alert me if there is any new development with your pain. For now, please stay home and rest."
+
+### Testing for chest pain related issues
+1. The user can type into the chatbot "I have some discomfort in my chest"
+2. The chatbot will respond with "Are you experiencing breathlessness, chest pain, as well as cold sweat?"
+3. The user should give a "yes" or "no" reply.
+   - If the user replies with "yes", the bot will reply the user with "Alright. I have notified a nearby CFR to attend to you immediately. Please remain calm and try to stay seated in the upright position."
+   - If the user replies with "no", the bot will reply the user with "I see. In that case, I would advice you to rest at home until the discomfort goes away. If the pain gets worse or if there is any new development, please let me know."
+   
+### Testing for cut related issues
+1. The user can type into the chatbot "I have just cut myself"
+2. The chatbot will respond with "I'm sorry to hear that. Was it due to an animal bite or caused by a rusty nail?"
+3. The user should give a "yes" or "no" reply.
+   - If the user replies with "yes", the bot will reply the user with "Please visit the GP closes to you to disinfect the cut. "
+4. If the user replies with "no", the bot will reply the user with "Do you feel feverish and is there redness, swelling, pain and pus formation developing on the cut?"
+   - If the user replies with "yes", the bot will reply the user with "Please head down to the nearest GP. Do take note of any medication you have taken in the past 24 hours."
+   - If the user replies with "no", the bot will reply the user with "Please rest at home and continue to monitor your cut. If it continues to bleed or if there is any new development, please let me know."
+   
+### Testing for Nausea and Vomiting related issues
+1. User can type into the chatbot ‘I am feeling nauseous’
+2. Chatbot will respond with "Oh no. Do you have severe abdominal pain or was the vomiting caused by a head injury?"
+3. The user should give a "yes" or "no" reply.
+   - If the user replies with "yes", the bot will reply the user with "Please head down to the A&E to seek immediate medical attention. Please take note of any medication you have taken in the last 24 hours and take note of any drug allergies you may have."
+4. If the user replies with "no", the bot will reply the user with "Are you exhibiting signs of dehydration such as extreme thirst, light headedness and a dry mouth?"
+   - If the user replies with "yes", the bot will reply the user with "Please head down to the nearest GP. Do take note of any medication you have taken in the past 24 hours."
+5. If the user replies with "no", the bot will reply the user with "Has the vomiting been persisting for a few hours or have you developed abdominal pain or diarrhoea?"
+   - If the user replies with "yes", the bot will reply the user with "Please seek medical attention at your nearest GP. Don't forget to take note of any medication you have taken in the past 24 hours and if you have any drug allergies."
+   - If the user replies with "no", the bot will reply the user with "Please rest at home and continue to monitor your nausea. If it gets worse or if there is any new development, please let me know."
+   
+### What to do before the Ambulance arrives :
+1. User can alert the chatbot that they have contacted an ambulance by typing something like ‘I have called an ambulance’ into the chatbot.
+2. Chatbot will respond with a query to extract more information from the user. Examples of such quaries are as follows:
+   - "Oh. What's wrong?"
+   - "I see. May I ask what made you want to call an ambulance."
+   - "I hope you are okay. Why did you decide to call an ambulance?"
+3. User can choose to enter a responce that is related to ‘giddiness’, ‘spine injury’, or ‘difficulty breathing’
+4. If the user has entered a responce that is related to ‘giddiness’, the chatbot will reply with "Oh I see. In that case, please drink something sweet and remain seated. This will help to reduce the giddiness."
+5. If the user has entered a responce that is related to ‘spine injury’, the chatbot will reply with "Oh no. I would advice you to avoid twisting your back and stay as still as possible. This will help reduce the chance of the injury getting worse."
+6. If the user has entered a responce that is related to ‘difficulty breathing’, the chatbot will reply with "I see. Please remain seated in an upright position if you are still facing chest related issues. Please try to remain calm."
+
+### Looking for Emotional support :
+1. User can type an emotional statement into the chatbot such as ‘I am feeling sad’
+2. Chatbot will reply with a query to extract more information from the user. Examples of such quaries are as follows:
+    - "Oh no. What made you feel that way?"
+    - "I understand what you are going through. Please tell me more."
+    - "Please share with me more about how you feel."
 
 ### Break down into end to end tests
 
